@@ -1,0 +1,286 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  max-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+}
+/* --------------------------Header --------------------------------*/
+.header {
+  /* background: #282828; */
+  display: flex;
+  padding: 20px 10%;
+  justify-content: space-between;
+
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.header .logo {
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  align-self: center;
+}
+.header.sticky {
+  padding: 5px 10%;
+  background: #282828;
+}
+.header ul li {
+  position: relative;
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+.header ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 0.1em;
+  font-size: 18px;
+}
+.header ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.7s;
+}
+.header ul li a:hover::after {
+  width: 100%;
+  transition: width 0.7s;
+}
+/* --------------------------End Header--------------------------------*/
+
+/* -------------------------seccion universidad----------------------- */
+.universidad {
+  background-image: url("../img/Bandera_de_la_Uasd.svg");
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.background-overlay {
+  background: rgba(48, 51, 107, 0.8);
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+}
+.background-overlay .box{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  /* transition: .5s; */
+  opacity: 1;
+}
+.background-overlay .box .info{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  transform: translateY(-4.5em);
+  margin-left: 11em;
+}
+.info .enlace{
+  position: absolute;
+  background: #4d4747;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  transform: translateY(1.5em);
+}
+.info .enlace:hover{
+  background: #3d3939;
+}
+/* ------------------------- End Section Universidad----------------------- */
+
+/* ------------------------- Section Asignatura ------------------------ */
+.asignatura {
+  background: #0099CC;
+  height: 100vh;
+}
+.asignatura .encabezado{
+  text-align: center;
+  transform: translateY(8em);
+  color: #fff;
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+  font-weight: 500;
+}
+.asignatura .contenido{
+  display: flex;
+  justify-content: space-around;
+  opacity: 1;
+  transition: 0.3s;
+}
+.contenido .card-info .images img{
+  border-radius: 1em 1em 0 0;
+  height: 10em;
+  width: 100%;
+  border-bottom: 1px solid #282828;
+}
+.contenido .card-info{
+  height: 30em;
+  width: 20em;
+  text-align: center;
+  border-radius: 1em;
+  transform: translateY(50%);
+  background: #ffffff;
+}
+
+.contenido .card-info:hover{
+  transform: translateY(14rem);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  transition: ease-in-out 0.3s;
+}
+.info h3{
+  font-weight: 700;
+  margin: 20px 0 20px 0;
+}
+.contenido .card-info .info p{
+  padding: 0 10px;
+  font-size: 20px;
+}
+
+
+
+/* ------------------------- End Section Asignatura ------------------------*/
+
+/* ------------------------- Section Estudiante ------------------------ */
+.estudiante{
+  min-height: 40vh;
+}
+
+.estudiante .container {
+  display: flex;
+  opacity: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.estudiante .foto{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #0099CC;
+  outline: 20px;
+  margin-bottom: 20px;
+}
+.estudiante .matricula,
+.estudiante .name{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* ------------------------- End Section Estudiante ------------------------ */
+
+/* ------------------------- Section Ejercicio ------------------------ */
+.ejercicio {
+  background: #0099cc;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ejercicio .card-body {
+  height: 400px;
+  width: 700px;
+  background: #282828;
+  display: grid;
+  grid-template-rows: 60px auto auto;
+  border-radius: 10px;
+}
+.ejercicio .card-body .title {
+  padding: 20px;
+  width: 100%;
+  background: #fff;
+  letter-spacing: 0.1em;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  grid-row: 1;
+}
+.ejercicio .card-body .calculadora {
+  grid-row: 2;
+  margin: auto 5em;
+}
+.ejercicio .card-body .tabla {
+  display: flex;
+  justify-content: space-around;
+}
+.operacion {
+  margin: 0 10px;
+  margin-top: 15px;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+}
+input[type="number"] {
+  height: 2em;
+  width: 11em;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  -moz-appearance: textfield;
+  border: none;
+}
+
+input[type="number"]:focus {
+  border: 1px solid rgba(30, 143, 255, 0.726);
+}
+.btn-box {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.btn {
+  padding: 9px 25px;
+  margin-top: 20px;
+  width: 15rem;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #000;
+  font-weight: 600;
+  transition: all 0.3s ease 0s;
+}
+.btn:hover{
+  background-color: rgba(205, 209, 211, 0.767);
+}
+.line {
+  width: 20px;
+  height: 3px;
+  background: #ffffff;
+  margin: 5px;
+  transform: translate(0, 1.2em);
+}
+/* ------------------------- End Section Ejercicio ------------------------ */
+
+/* footer */
+.footer {
+  background: #e2f3f5;
+  padding: 20px;
+  text-align: center;
+  color: #282828;
+  font-size: 20px;
+  width: 100%;
+}
+
