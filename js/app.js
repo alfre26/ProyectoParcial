@@ -85,7 +85,6 @@ function calcular() {
 $(document).ready(() => {
   $("#btn-calcular").click(e => {
     e.preventDefault();
-
     if (
       $("#first-n1").val() != "" &&
       $("#first-n2").val() != "" &&
