@@ -31,8 +31,6 @@ function sumar(n1, n2, n3, n4) {
   let denominador = n2 * n4;
 
   resultado(numerador, denominador);
-  console.log("el resultado es : " + numerador + "/" + denominador);
-  console.log(`n1 : ${n1}, n2: ${n2}, n3: ${n3}, n4: ${n4}`);
 }
 
 function restar(n1, n2, n3, n4) {
