@@ -16,10 +16,6 @@ function resultado(numerador, denominador) {
     let num = numerador / divisor;
     let deno = denominador / divisor;
 
-    console.log(`${numerador}/ ${denominador}`);
-    console.log(
-      `numerador : ${num} Denominador : ${deno}, divisor: ${divisor}`
-    );
     $("#results-n5").val(num);
     $("#results-n6").val(deno);
   } else {
@@ -47,7 +43,6 @@ function restar(n1, n2, n3, n4) {
   let denominador = n2 * n4;
 
   resultado(numerador, denominador);
-  console.log("el resultado es : " + numerador + "/" + denominador);
 }
 
 function multi(n1, n2, n3, n4) {
@@ -55,14 +50,12 @@ function multi(n1, n2, n3, n4) {
   let denominador = n2 * n4;
 
   resultado(numerador, denominador);
-  console.log(`el resultado es ${numerador} / ${denominador}`);
 }
 
 function dividir(n1, n2, n3, n4) {
   let numerador = n1 * n4;
   let denominador = n2 * n3;
   resultado(numerador, denominador);
-  console.log("el resultado es : " + numerador + "/" + denominador);
 }
 
 function calcular() {
@@ -106,4 +99,3 @@ $(document).ready(() => {
   });
 });
 
-console.log("working");
