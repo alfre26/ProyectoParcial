@@ -164,7 +164,7 @@ body {
 /* ------------------------- Section Estudiante ------------------------ */
 .estudiante{
   min-height: 60vh;
-  background: url("/img/bg-student.jpg");
+  background: url("../img/bg-student.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
