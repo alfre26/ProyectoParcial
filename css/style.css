@@ -68,6 +68,9 @@ body {
 .universidad {
   background-image: url("../img/Bandera_de_la_Uasd.svg");
   background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
   min-height: 100vh;
 }
 
@@ -160,7 +163,10 @@ body {
 
 /* ------------------------- Section Estudiante ------------------------ */
 .estudiante{
-  min-height: 40vh;
+  min-height: 60vh;
+  background: url("/img/bg-student.jpg");
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .estudiante .container {
@@ -169,19 +175,21 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
 }
 
-.estudiante .foto{
+.estudiante img{
   width: 150px;
   height: 150px;
   border-radius: 50%;
   border: 2px solid #0099CC;
   outline: 20px;
+  margin-top: 8em;
   margin-bottom: 20px;
+  opacity: 1;
 }
 .estudiante .matricula,
 .estudiante .name{
+  color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 600;
